@@ -1,4 +1,4 @@
-#include "BigInteger.h"
+#include "BigInteger.c"
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
         printf("Enter data\n");
         fgets(s,100,stdin);
         b=initialize(s);
-        c=mod(a,b);// Change function here
+        c=mod(a,b);
         printf("\na\t");
         display(a);
 
@@ -27,8 +27,3 @@ int main()
     }
     
 }
-
-/*
- gcc -c -g BigInteger.c  ;  gcc -c -g BigInteger_main.c  ; gcc -o dev_out BigInteger_main.o BigInteger.o
- ./dev_out.exe
-*/
